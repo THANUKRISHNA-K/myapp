@@ -1,0 +1,29 @@
+<div class="main">
+  <div class="font"> SI<span style="color:rgb(218, 3, 110);">GN</span>-UP S<span style="color: rgb(7, 133, 192);">OO</span>N</div>
+  <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+    <div nz-col [nzSpan]="24"><h2>GET YOUR ACCOUNT HERE
+      <div style="font-size: 12px; opacity: 0.6;">Enter the following to register</div>
+     </h2>
+    </div>  
+    <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your username!">
+          <nz-input-group nzPrefixIcon="user">
+            <input type="text" nz-input formControlName="userName" placeholder="Email"  name="uname"  #emailSignup required />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your Password!">
+          <nz-input-group nzPrefixIcon="lock">
+            <input type="password" nz-input formControlName="password" placeholder="Password"  #passwordSignup required />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+     
+      <button nz-button class="login-form-button login-form-margin" (click)="onSignup(emailSignup.value,passwordSignup.value)" [nzType]="'primary'">Submit</button>
+     
+      <button nz-button routerLink="/Login" >Back</button>
+    </form>
+   
+  
+</div>

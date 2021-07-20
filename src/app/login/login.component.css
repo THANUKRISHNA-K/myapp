@@ -1,0 +1,29 @@
+.main{
+  min-height: 100vh;
+}
+      .login-form {
+        max-width: 300px;
+        margin: 35px auto;
+      }
+
+      .login-form-margin {
+        margin-bottom: 16px;
+      }
+
+      .login-form-forgot {
+        
+        float: right;
+      }
+
+      .login-form-button {
+        width: 100%;
+      }
+      #fb{
+        background-color: rgb(6, 164, 255);
+      }
+      .font{
+        font-size: 45px;
+    }
+   
+     
+    

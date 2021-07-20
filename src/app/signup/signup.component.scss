@@ -1,0 +1,35 @@
+.main{
+  min-height: 100vh;
+}
+      .login-form {
+        max-width: 300px;
+        margin: 75px auto;
+      }
+
+      .login-form-margin {
+        margin-bottom: 16px;
+      }
+
+      .login-form-forgot {
+        float: right;
+      }
+
+      .login-form-button {
+        width: 100%;
+      }
+      .font{
+        font-size: 45px;
+       
+    }
+    @media screen and (max-width:768px){
+      .font{
+        margin-top: 35px;
+        font-size: 35px;
+      }
+      .login-form {
+        max-width: 300px;
+        margin: 35px auto;
+      }
+    }
+     
+  

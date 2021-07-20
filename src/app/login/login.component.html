@@ -1,0 +1,39 @@
+<div class="main">
+<div class="font"> WE<span style="color:rgb(218, 3, 110)">LCO</span>ME<span style="color: rgb(7, 133, 192);">!</span></div>
+    <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+     <div nz-col [nzSpan]="24"><h2>SIGN-IN INTO ACCOUNT
+      <div style="font-size: 12px; opacity: 0.6;">For better communication</div>
+     </h2>
+      
+    </div> 
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your username!">
+          <nz-input-group nzPrefixIcon="user">
+            <input type="text" nz-input formControlName="userName" [(ngModel)]="userid " placeholder="Username" name="uname" #email required />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your Password!">
+          <nz-input-group nzPrefixIcon="lock">
+            <input type="password" nz-input formControlName="password" placeholder="Password" name="psw" #password required />
+          </nz-input-group>
+          
+        </nz-form-control>
+        <div nz-col [nzSpan]="24">
+          <a class="login-form-forgot">Forgot password ?</a>
+        </div>
+      </nz-form-item>
+     
+       
+     
+      <button nz-button class="login-form-button login-form-margin" (click)="onSignin(email.value,password.value)" [nzType]="'primary'">Log in</button>
+       <button  nz-button class="login-form-button login-form-margin" style="border: 2px solid greenyellow;" routerLink="/Signup"> Signup</button>
+       <button  nz-button class="login-form-button login-form-margin" id="fb" [nzType]="'primary'" (click)="loginwithfb()">
+        <img width="18px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/900px-Facebook_f_logo_%282019%29.svg.png" />
+        Login with Facebook</button>
+       <button  nz-button class="login-form-button login-form-margin" (click)="loginwithgoogle()" > 
+        <img width="18px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+        Login with Google</button>
+    </form>
+  </div>

@@ -1,0 +1,30 @@
+<div class="main">
+  <ul nz-menu nzTheme="dark" nzMode="inline" style="margin-top:25px" >
+    <li nz-submenu nzClose nzTitle="Language" nzIcon="language">
+      <ul>
+        <li nz-menu-item nzMatchRouter>
+            <button  nz-button class="login-form-button login-form-margin" [nzType]="'primary'" (click)="changeLang('en')">English</button>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+            <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'"(click)="changeLang('es')">Espanish</button>  
+        </li>
+        <li nz-menu-item nzMatchRouter>
+            <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'" (click)="changeLang('fr')">french</button>
+        </li>
+        <li nz-menu-item nzMatchRouter>
+            <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'" (click)="changeLang('ta')">Tamil</button>
+        </li>
+       
+      </ul>
+    </li>
+    
+  </ul>
+ <div class="content" >
+  <h2 >{{'home.title'|translate}}</h2>
+<h4 >{{'home.message1'|translate}}</h4>
+<h4 >{{'home.message2'|translate}}</h4>
+<h4 >{{'home.message3'|translate}}</h4>
+<h4 >{{'home.message4'|translate}}</h4>
+<h4 >{{'home.message5'|translate}}</h4>
+</div> 
+</div>

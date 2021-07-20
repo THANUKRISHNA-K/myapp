@@ -1,0 +1,69 @@
+
+    <div *ngFor= "let item of data  ">
+      <div class="content">
+         <h2>NIFTY<br>
+        <h6>{{presentdate| date:'shortTime'}}</h6></h2> 
+        <h2>{{item.nifty | currency:'INR'}}</h2>
+    </div>
+    <hr>
+    <div class="content">
+        <h2>NIFTY50<br>
+       <h6>{{presentdate| date:'shortTime'}}</h6></h2> 
+       <h2>{{item.nifty50| currency:'INR'}}</h2>
+   </div>
+   <hr>
+   <div class="content">
+    <h2>NIKE<br>
+   <h6>{{presentdate| date:'shortTime'}}</h6></h2> 
+   <h2>{{item.nike | currency:'INR'}}</h2>
+</div>
+<hr>
+<div class="content">
+    <h2>NSEI<br>
+   <h6>{{presentdate| date:'shortTime'}}</h6></h2> 
+   <h2>{{item.nsei | currency:'INR'}}</h2>
+</div>
+<hr>
+<div class="content">
+    <h2>DOWJ<br>
+   <h6>{{presentdate| date:'shortTime'}}</h6></h2> 
+   <h2>{{item.dowj | currency:'INR'}}</h2>
+</div>
+<hr>
+<div class="content">
+    <h2>AAPL<br>
+   <h6>{{presentdate| date:'shortTime'}}</h6></h2> 
+   <h2>{{item.aapl | currency:'INR'}}</h2>
+</div>
+<hr>
+<div class="content">
+    <h2>SBUX<br>
+   <h6>{{presentdate| date:'shortTime'}}</h6></h2> 
+   <h2>{{item.sbux | currency:'INR'}}</h2>
+</div>
+<hr>
+<div class="content">
+    <h2>SBIN-NS<br>
+   <h6>{{presentdate| date:'shortTime'}}</h6></h2> 
+   <h2>{{item.sbinns | currency:'INR'}}</h2>
+</div>
+<hr>
+<div class="content">
+    <h2>IOC<br>
+   <h6>{{presentdate| date:'shortTime'}}</h6></h2> 
+   <h2>{{item.ioc | currency:'INR'}}</h2>
+</div>
+<hr>
+<div class="content">
+    <h2>BSESN<br>
+   <h6>{{presentdate| date:'shortTime'}}</h6></h2> 
+   <h2>{{item.bsesn | currency:'INR'}}</h2>
+</div>
+<hr>
+    
+      <td><button class="btn btn-danger" (click)="remov(item.key)" style="width: 100px;" >Delete</button>
+       </td>
+    </div>
+   
+
+

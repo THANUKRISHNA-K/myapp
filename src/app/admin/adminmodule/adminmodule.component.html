@@ -1,0 +1,20 @@
+<div class="nav">
+    <h2>
+        <span>ADMINI</span>
+        <span style="color: crimson;">STRATOR</span>
+    </h2>
+    <div> <a style="color:rgb(0, 0, 0)" (click)="home()">HOME</a>
+        <a style="color:rgb(0, 0, 0)" (click)="stock()">STOCK</a>
+        <a style="color:rgb(0, 0, 0)" (click)="graphic()">STOCK GRAPHIC</a>
+        <a style="color:rgb(0, 0, 0)" (click)="trading()">TRADING</a>
+         <a style="color:rgb(0, 0, 0)" (click)="userlist()">USERLIST</a>
+      
+        <a routerLink="/Login">LOGOUT</a></div>
+   
+</div>
+
+<div class="content">
+    <router-outlet></router-outlet>
+    
+</div>
+

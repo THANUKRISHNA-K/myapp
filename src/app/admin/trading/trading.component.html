@@ -1,0 +1,28 @@
+<h2>TRADING INTERFACE</h2>
+<form #myform="ngForm" >
+    <div class="main">
+        <div><img src="https://firebasestorage.googleapis.com/v0/b/sample-d8234.appspot.com/o/myimagesforuse%2F%E2%80%94Pngtree%E2%80%94financial%20wealth%20management%20stock%20market_4647801.png?alt=media&token=9e4a46b5-3577-48ea-80cc-26773dd63f8b"></div>
+        <div class="box2">
+            <div class="col-sm-4"> <input type="text"  class="form-control" name="nifty"   placeholder="NIFTY"        [(ngModel)]="tdata.nifty"></div>
+            <div class="col-sm-4"> <input type="text"  class="form-control" name="nifty50" placeholder="NIFTY50"      [(ngModel)]="tdata.nifty50"></div>
+            <div class="col-sm-4"><input type="text"  class="form-control" name="nike"  placeholder="NIKE"     [(ngModel)]="tdata.nike"></div>
+            <div class="col-sm-4"> <input type="text"  class="form-control" name="nsei"  placeholder="NSEI"      [(ngModel)]="tdata.nsei"></div>
+            <div class="col-sm-4"> <input type="text"  class="form-control" name="dowj"    placeholder="DOW-J"  [(ngModel)]="tdata.dowj"></div>
+            <div class="col-sm-4"><input type="text"  class="form-control" name="aapl"    placeholder="AAPL"  [(ngModel)]="tdata.aapl"></div>
+            <div class="col-sm-4"> <input type="text"  class="form-control" name="sbux"    placeholder="SBUX"  [(ngModel)]="tdata.sbux"></div>
+            <div class="col-sm-4"><input type="text"  class="form-control" name="sbinns"    placeholder="SBIN-NS"  [(ngModel)]="tdata.sbinns"></div>
+            <div class="col-sm-4"> <input type="text"  class="form-control" name="ioc"    placeholder="IOC"  [(ngModel)]="tdata.ioc"></div>
+            <div class="col-sm-4"> <input type="text"  class="form-control" name="bsesn"    placeholder="BSESN"  [(ngModel)]="tdata.bsesn"></div>
+            <div class="endbtn" >
+                <button  class="btn btn-primary" (click)="add(myform)" >add</button>   
+            </div>   
+        </div>
+    </div>
+    
+   
+
+</form>
+   
+ 
+  
+   

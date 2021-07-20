@@ -1,0 +1,47 @@
+<div class="main">
+  <div class="news"> 
+      <marquee>
+          <div class="content">
+              <h2 >NIFTY <span class="spa" style="margin-left: 10px;" *ngFor= "let item of data">{{item.nifty | currency:'INR'}} </span>
+              <br><h6>{{presentdate| date:'shortTime'}}</h6></h2>
+
+              <h2 >NIFTY50 <span class="spa" style="margin-left: 10px;" *ngFor= "let item of data">{{item.nifty50 | currency:'INR'}} </span>
+                <br><h6>{{presentdate| date:'shortTime'}}</h6></h2>
+
+                <h2 >NIKE <span class="spa" style="margin-left: 10px;" *ngFor= "let item of data">{{item.nike | currency:'INR'}} </span>
+                    <br><h6>{{presentdate| date:'shortTime'}}</h6></h2>
+
+                    <h2 >NSEI <span class="spa" style="margin-left: 10px;" *ngFor= "let item of data">{{item.nsei | currency:'INR'}} </span>
+                        <br><h6>{{presentdate| date:'shortTime'}}</h6></h2>
+                        <h2 >DOWJ <span style="margin-left: 10px;" *ngFor= "let item of data">{{item.dowj | currency:'INR'}} </span>
+                            <br><h6>{{presentdate| date:'shortTime'}}</h6></h2>
+
+                            <h2 >AAPL <span class="spa" style="margin-left: 10px;" *ngFor= "let item of data">{{item.aapl | currency:'INR'}} </span>
+                                <br><h6>{{presentdate| date:'shortTime'}}</h6></h2>
+
+                                <h2 >SBUX <span class="spa" style="margin-left: 10px;" *ngFor= "let item of data">{{item.sbux | currency:'INR'}} </span>
+                                    <br><h6>{{presentdate| date:'shortTime'}}</h6></h2>
+
+                                    <h2 >SBIN-NS <span class="spa" style="margin-left: 10px;" *ngFor= "let item of data">{{item.sbinns | currency:'INR'}} </span>
+                                        <br><h6>{{presentdate| date:'shortTime'}}</h6></h2>
+
+                                        <h2 >IOC <span class="spa" style="margin-left: 10px;" *ngFor= "let item of data">{{item.ioc | currency:'INR'}} </span>
+                                            <br><h6>{{presentdate| date:'shortTime'}}</h6></h2>
+
+                                            <h2 >BSESN<span class="spa" style="margin-left: 10px;" *ngFor= "let item of data">{{item.bsesn | currency:'INR'}} </span>
+                                                <br><h6>{{presentdate| date:'shortTime'}}</h6></h2>
+     </div>
+     </marquee>
+    <div class="canva">
+        <div  class="canva1"><canvas id="charts"  #charts ></canvas></div>
+        <div  class="canva2"><canvas id="charts" #charta ></canvas></div>
+       
+    </div>
+    <div class="canva">
+        <div  class="canva2"><canvas id="charts" #chartc></canvas></div>
+        <div  class="canva1"><canvas id="charts"  #chartb ></canvas></div>
+      
+       
+    </div>
+    
+</div>

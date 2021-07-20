@@ -1,0 +1,22 @@
+
+    <table id="customers">
+        <tr>
+            <th > <button class="btn btn-success" (click)="popup()">FRIEND'S LIST - ADD FRIENDS</button></th>
+          
+        
+          
+        </tr>
+    <tr *ngFor= "let item of data | paginate: {itemsPerPage:8, currentPage:p}; ">
+            
+        <td style="text-align: center;"><img  [src]="item.filedata" style="border-radius: 50%;"height="100px" width="100px">
+            <br>
+            {{item.names|uppercase}}<br>
+            <button class="btn btn-danger" (click)="remov(item.key)" style="width: 100px;" >Unfriend</button>
+        </td>
+      
+    </tr>
+    <tr >
+      <th  colspan="9"><div  class="pagnum"><pagination-controls (pageChange)="p=$event"></pagination-controls></div></th>
+      </tr>
+    </table>
+

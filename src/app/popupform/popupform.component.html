@@ -1,0 +1,23 @@
+  <h2>USER INTERFACE</h2>
+<form #myform="ngForm" >
+    <input type="text"  class="form-control" name="name"   placeholder="Enter Name"        [(ngModel)]="lst.names">
+    <input type="text"  class="form-control" name="rollno" placeholder="Enter Rollno"      [(ngModel)]="lst.id">
+    <input type="text"  class="form-control" name="phone"  placeholder="Enter Phoneno"     [(ngModel)]="lst.phone">
+    <input type="text"  class="form-control" name="email"  placeholder="Enter E-Mail"      [(ngModel)]="lst.email">
+    <input type="text"  class="form-control" name="dep"    placeholder="Enter Department"  [(ngModel)]="lst.dept">
+    <input type="text"  class="form-control" name="col"    placeholder="Enter College"     [(ngModel)]="lst.college">
+    <input type="text"  class="form-control" name="loc"    placeholder="Enter Locality"    [(ngModel)]="lst.locality">
+    <input type="file"  class="form-control" name="pho" (change)="upload($event)" accept=".png,.jpg" [(ngModel)]="lst.filedata">
+    <br>
+    <button class="btn btn-success"  (click)="uploadImage()">Upload Image</button>
+    <br><br>
+    <div class="endbtn" >
+        <button  class="btn btn-primary" (click)="add(myform)">add</button>   
+        <button class="btn btn-danger" (click)="close()">close</button>
+    </div>
+
+</form>
+   
+ 
+  
+   

@@ -1,0 +1,41 @@
+
+img{
+    width: 500px;
+    height: 500px;
+}
+.form-control{
+    width:300px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+@media screen and (min-width:1024px)
+{
+    .main{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    img{
+        width: 500px;
+        height: 500px;
+    }
+    .form-control{
+        width:300px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+}
+@media screen and (max-width:768px)
+{
+    img{
+        width: 250px;
+        height: 250px;
+    }
+    .form-control{
+        width:250px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+}
