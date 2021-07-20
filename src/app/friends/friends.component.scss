@@ -22,3 +22,8 @@
     background-color: rgb(1, 194, 207);
     color: white;
   }
+  @media screen and (max-width:768px){
+    .main{
+      min-height: 120vh;
+    }
+  }

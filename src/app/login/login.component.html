@@ -25,15 +25,13 @@
         </div>
       </nz-form-item>
      
-       
-     
-      <button nz-button class="login-form-button login-form-margin" (click)="onSignin(email.value,password.value)" [nzType]="'primary'">Log in</button>
-       <button  nz-button class="login-form-button login-form-margin" style="border: 2px solid greenyellow;" routerLink="/Signup"> Signup</button>
-       <button  nz-button class="login-form-button login-form-margin" id="fb" [nzType]="'primary'" (click)="loginwithfb()">
+       <button nz-button class="login-form-button login-form-margin" (click)="onSignin(email.value,password.value)" [nzType]="'primary'">Log in</button>
+       <a  nz-button class="login-form-button login-form-margin" style="border: 2px solid greenyellow;" routerLink="/Signup"> Signup</a>
+       <a  nz-button class="login-form-button login-form-margin" id="fb" [nzType]="'primary'" (click)="loginwithfb()">
         <img width="18px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/900px-Facebook_f_logo_%282019%29.svg.png" />
-        Login with Facebook</button>
-       <button  nz-button class="login-form-button login-form-margin" (click)="loginwithgoogle()" > 
+        Login with Facebook</a>
+       <a  nz-button class="login-form-button login-form-margin" (click)="loginwithgoogle()" > 
         <img width="18px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
-        Login with Google</button>
+        Login with Google</a>
     </form>
   </div>
